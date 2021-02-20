@@ -18,6 +18,9 @@ var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
 
+var ghpages = require('gh-pages');
+// var ghpages = require("gulp-gh-pages");
+
 gulp.task("css", function () {
 return gulp
 .src("source/less/style.less")
@@ -113,3 +116,7 @@ gulp.series("clean", "copy", "jsmin", "css","images", "webp", "sprite", "html")
 );
 
 gulp.task("start", gulp.series("build", "server"));
+
+gulp.task('deploy', function() {
+  ghpages.publish('build', function(err) {});
+});

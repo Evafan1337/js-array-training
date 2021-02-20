@@ -1,0 +1,102 @@
+.code {
+	width: 90%;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	/*width: 40%;*/
+	/*width: auto;*/
+	border-left: 6px solid #00458b;
+	/*background-color: #eee;*/
+	/*background-image: linear-gradient(to top right, rgb(123, 133, 247), rgb(134, 143, 247), rgb(145, 153, 247), rgb(156, 164, 246), rgb(167, 174, 246), rgb(178, 184, 246), rgb(190, 194, 246), rgb(201, 204, 246), rgb(212, 214, 246), rgb(223, 225, 245), rgb(234, 235, 245), rgb(245, 245, 245));*/
+	background-color: rgba(230,230,230,1);
+
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	/*background-image: linear-gradient(to top right, rgb(203, 203, 207), rgb(198, 196, 201), rgb(192, 190, 195), rgb(187, 183, 188), rgb(182, 176, 182), rgb(177, 170, 176), rgb(171, 163, 170), rgb(166, 157, 164), rgb(161, 150, 158), rgb(156, 143, 151), rgb(150, 137, 145), rgb(145, 130, 139));*/
+
+	color: #000;
+}
+
+.code--center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.code--console {
+	font-style: italic;
+	/*background-color: rgba(199,199,199,1);*/
+	/*background-image: linear-gradient(to top right, rgb(123, 133, 247), rgb(134, 143, 247), rgb(145, 153, 247), rgb(156, 164, 246), rgb(167, 174, 246), rgb(178, 184, 246), rgb(190, 194, 246), rgb(201, 204, 246), rgb(212, 214, 246), rgb(223, 225, 245), rgb(234, 235, 245), rgb(245, 245, 245));*/
+}
+
+/*.code--width-36 {
+	width: 36%;
+	/*width: auto;
+}
+
+.code--width-54 {
+	width: 54%;
+	width: auto;
+}
+
+.code--width-57 {
+	width: 57%;
+	/*width: auto;
+}
+
+.code--width-67 {
+	width: 65%;
+}*/
+
+.code__keyword {
+	color: #00458b;
+}
+
+.code__arrow {
+	color:steelblue;
+}
+
+.code__eval,
+.code__int,
+.code__value,
+.code__operator {
+	color: orange;
+}
+
+.code__string {
+	color: green;
+}
+
+.code__operator,
+.code__point,
+.code__boolean {
+	color: crimson;
+}
+
+.code__console-value {
+	color: blue;
+}
+
+.code__console-string {
+	color: crimson;
+}
+
+.code__statement-operator {
+	color: orchid;
+}
+
+
+@media (max-width: 940px){
+	.code {
+		font-size: 12px;
+		overflow: scroll;
+	}
+
+	.code--width-36,
+	.code--width-54,
+	.code--width-57,
+	.code--width-67 {
+		width: 95%;
+	}
+}

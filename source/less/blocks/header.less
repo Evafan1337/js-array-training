@@ -1,0 +1,42 @@
+.header {
+	/*min-height: 1000px;*/
+	height: 100vh;
+	/*border: 1px solid red;*/
+	background: url('../../img/gif_header.gif');
+	display: flex;
+    align-items: flex-end;
+}
+
+.header__inner {
+	display: flex;
+	width: 100%;
+	/*flex-direction: column;*/
+	/*align-items: center;*/
+	/*padding-bottom: 50px;*/
+}
+
+.header__preview-container {
+	width: 90%;
+	background-color: rgba(125,125,125,1);
+	/*background: linear-gradient(45deg, rgba(126,24,223,1) 0%, rgba(190,170,233,1) 100%);*/
+	color: white;
+	padding-left: 10%;
+}
+
+.header__title {
+	font-size: 48px;
+}
+
+.header__preview-text {
+	font-size: 32px;
+}
+
+@media(max-width: 1280px){
+	.header__title {
+		font-size: 32px;
+	}
+
+	.header__preview-text {
+		font-size: 24px;
+	}
+}

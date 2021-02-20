@@ -118,5 +118,5 @@ gulp.series("clean", "copy", "jsmin", "css","images", "webp", "sprite", "html")
 gulp.task("start", gulp.series("build", "server"));
 
 gulp.task('deploy', function() {
-  return ghpages.publish('build', function(err) {});
+  ghpages.publish('build', function(err) {});
 });
